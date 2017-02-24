@@ -1,0 +1,327 @@
+/*! _template.scss
+ *
+ * @project: Engage transactional emails
+ * @description: Custom styles for Source Knowledge transactional emails
+ *               for Engage.
+ * @dependancy: Zurb Foundation for Emails (https://github.com/zurb/foundation-emails)
+ *
+ * Note: Some selectors are unsusually long or overqualified. Because emails are still
+ *       formated with nested tables. This rise the specificity of the base classes.
+ *       Accordingly, we have to use long selectors to override them.
+ */
+
+//  Table of Contents:
+//
+//   1. Global
+//   2. Grid
+//   3. Block Grid
+//   4. Typography
+//   5. Button
+//   6. Callout
+//   7. Menu
+//   8. Thumbnail
+//   9. Wrapper
+//  10. Sections
+
+
+
+// GLOBAL
+// ====================================
+body,
+html,
+.body {
+	background: $body-background !important;
+}
+
+.body-drip {
+	border-top: 8px solid #663399;
+}
+
+.Block--image {
+	background: $sk-blue-lightest;
+}
+
+table.middle {
+	tr,
+	td {
+		vertical-align: middle;
+	}
+}
+
+// TYPOGRAPHY
+// ====================================
+.title {
+	line-height: $sk-title-line-height;
+	margin: 0.72em 0 0.2em 0;
+}
+
+h1.title {
+	font-size: sk-font-size('text-5');
+}
+
+p.small {
+	margin-top: 0 !important;
+	margin-bottom: 2px !important;
+	 font-size: sk-font-size(text--2);
+}
+
+p.lead {
+	font-size: larger;
+	font-weight: bolder;
+}
+
+// BUTTON
+// ====================================
+.button a {
+	text-transform: uppercase;
+
+}
+// We add a flat button style
+table.button.flat {
+	table {
+		td {
+			background: $preFooter-background; // Fallback
+			background: transparent;
+			border: none;
+		}
+
+		a {
+			color: $button-color;
+			border: none;
+		}
+	}
+}
+
+// GRID
+// ====================================
+td.columns.no-padding,
+th.columns.no-padding {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+// SECTIONS
+// ====================================
+
+// Header
+table.container.header {
+	//  background: #8a8a8a;
+	background: $header-background;
+}
+
+.header .columns {
+	padding-bottom: 0;
+}
+
+.header p {
+	color: #ffffff;
+	padding-top: 15px;
+}
+
+.header .wrapper-inner {
+	padding: $header-padding;
+}
+
+.header .container {
+	background: transparent;
+}
+
+// Sub-header
+.subheader {
+	color: $small-font-color;
+	font-size: $small-font-size;
+	text-transform: uppercase;
+	line-height: $subheader-lineheight;
+}
+
+.title .subheader {
+	font-size: sk-font-size('text-0');
+	line-height: $subheader-lineheight;
+}
+
+// Pre-footer
+table.preFooter {
+	background: url("/assets/img/preFooter-600x200.png") $preFooter-background no-repeat !important;
+
+// Better rendering for white text over dark background
+	td,
+	th,
+	p,
+	.sk-button-inner {
+		font-smooth: always;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	table.button {
+		margin: 0;
+	}
+
+	p {
+		margin: 16px 0;
+		color: $md-text-light;
+		text-align: center;
+
+		a.cta {
+			display: inline-block;
+			padding: map-get($button-padding, 'default');
+			color: $md-text-light;
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 2;
+		}
+	}
+
+	p.cta {
+		margin: 0;
+	}
+
+	p.lead {
+		margin: 0;
+		font-size: sk-font-size(text-3);
+		font-weight: 400;
+		line-height: 2;
+	}
+}
+
+// Footer
+table.container.footer {
+	background: $footer-background;
+
+	// Better rendering for white text over dark background
+	td,
+	th,
+	p,
+	.sk-button-inner {
+		font-smooth: always;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	.menu {
+		margin-top: 14px;
+		margin-bottom: 24px;
+	}
+
+	p {
+		margin: 16px 0;
+		color: $md-text-light;
+		text-align: center;
+	}
+}
+
+// Social Media
+table.button.facebook table td {
+	background: #3b5998 !important;
+	border-color: #3b5998;
+}
+
+table.button.twitter table td {
+	background: #1daced !important;
+	border-color: #1daced;
+}
+
+table.button.google table td {
+	background: #db4a39 !important;
+	border-color: #db4a39;
+}
+
+.wrapper.secondary {
+	background: #f3f3f3;
+}
+
+
+
+
+// Mobile style
+//--------------
+@media only screen and (max-width: #{$global-breakpoint}) {
+
+// Grid
+//
+// Table padding doesn't always collapse in floating grids
+// Zurb's solution for centering columns is to insert empty columns.
+// By adding zero width column classes we avoid visibility classses
+// that are less widely supported.
+	table.body {
+		td.columns.small-0,
+		th.columns.small-0 {
+			width: 0 !important;
+			padding: 0% !important;
+		}
+	}
+
+// Typography
+	h1.title {
+		font-size: sk-font-size('text-4');
+		.subheader {
+			font-size: sk-font-size('text--2');
+		}
+	}
+
+// Buttons
+//
+// We want buttons to have the recomanded 48px touch-zone without being too big.
+// We define the visible part of the button with a span inside the a tag
+// .sk-button-inner - class for the visible part of the button
+	table.button.primary table td {
+		background: $body-background; // Fallback
+		background: transparent;
+		border: none;
+
+		 a .sk-button-inner {
+			background: $button-background;
+		}
+	}
+
+	table.button.flat table td {
+		a .sk-button-inner {
+			background: $preFooter-background; // Fallback
+			background: $button-background-flat;
+		}
+	}
+
+	table.button table td a {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0;
+		height: $sk-touch-zone-height;
+
+		.sk-button-inner {
+			display: inline-block;
+			color: $button-color;
+			padding: map-get($button-padding, default);
+			border: none;
+			border-radius: $button-radius;
+		}
+	}
+
+	.button.flat .sk-button-inner {
+
+	}
+
+	table.button:hover,
+	table.button:visited,
+	table.button:active {
+		table {
+			td {
+				background: $body-background;
+				color: $button-color;
+			}
+			a {
+				border: 0 solid $button-background;
+			}
+		}
+	}
+
+// Prevent iOS blue rendering of links
+	a[x-apple-data-detectors] {
+		color: inherit !important;
+		text-decoration: none !important;
+		font-size: inherit !important;
+		font-family: inherit !important;
+		font-weight: inherit !important;
+		line-height: inherit !important;
+	}
+
+}
