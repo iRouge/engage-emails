@@ -164,8 +164,9 @@ table.container.header {
 
 // Pre-footer
 table.preFooter {
-	background: url("/assets/img/hands-laptop_1200x400.jpg") 50% 50% / 600px auto  $preFooter-background no-repeat !important;
-
+	background-repeat: no-repeat;
+	background-image: url("/assets/img/hands-laptop_600x200.jpg") !important;
+	background-color: $preFooter-background;
 // Better rendering for white text over dark background
 	td,
 	th,
