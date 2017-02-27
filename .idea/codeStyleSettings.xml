@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectCodeStyleSettingsManager">
+    <option name="PER_PROJECT_SETTINGS">
+      <value>
+        <option name="AUTODETECT_INDENTS" value="false" />
+        <option name="OTHER_INDENT_OPTIONS">
+          <value>
+            <option name="INDENT_SIZE" value="2" />
+            <option name="CONTINUATION_INDENT_SIZE" value="8" />
+            <option name="TAB_SIZE" value="2" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+            <option name="SMART_TABS" value="true" />
+            <option name="LABEL_INDENT_SIZE" value="0" />
+            <option name="LABEL_INDENT_ABSOLUTE" value="false" />
+            <option name="USE_RELATIVE_INDENTS" value="false" />
+          </value>
+        </option>
+        <option name="LINE_SEPARATOR" value="&#10;" />
+        <option name="HTML_TEXT_WRAP" value="0" />
+        <option name="HTML_ENFORCE_QUOTES" value="true" />
+        <CssCodeStyleSettings>
+          <option name="HEX_COLOR_LOWER_CASE" value="true" />
+          <option name="HEX_COLOR_LONG_FORMAT" value="true" />
+          <option name="KEEP_SINGLE_LINE_BLOCKS" value="true" />
+        </CssCodeStyleSettings>
+        <codeStyleSettings language="CSS">
+          <indentOptions>
+            <option name="INDENT_SIZE" value="2" />
+            <option name="CONTINUATION_INDENT_SIZE" value="2" />
+            <option name="TAB_SIZE" value="2" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+            <option name="SMART_TABS" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="HAML">
+          <indentOptions>
+            <option name="CONTINUATION_INDENT_SIZE" value="4" />
+            <option name="TAB_SIZE" value="2" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+            <option name="SMART_TABS" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="HTML">
+          <indentOptions>
+            <option name="INDENT_SIZE" value="2" />
+            <option name="CONTINUATION_INDENT_SIZE" value="4" />
+            <option name="TAB_SIZE" value="2" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+            <option name="SMART_TABS" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="LESS">
+          <indentOptions>
+            <option name="CONTINUATION_INDENT_SIZE" value="0" />
+            <option name="TAB_SIZE" value="2" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+            <option name="SMART_TABS" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="SASS">
+          <indentOptions>
+            <option name="INDENT_SIZE" value="4" />
+            <option name="CONTINUATION_INDENT_SIZE" value="0" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+            <option name="SMART_TABS" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="SCSS">
+          <indentOptions>
+            <option name="CONTINUATION_INDENT_SIZE" value="2" />
+            <option name="TAB_SIZE" value="2" />
+            <option name="USE_TAB_CHARACTER" value="true" />
+            <option name="SMART_TABS" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+      </value>
+    </option>
+    <option name="USE_PER_PROJECT_SETTINGS" value="true" />
+  </component>
+</project>
