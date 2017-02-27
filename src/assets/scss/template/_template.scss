@@ -22,6 +22,7 @@
 //   8. Thumbnail
 //   9. Wrapper
 //  10. Sections
+//  11. Pages
 
 
 
@@ -31,6 +32,10 @@ body,
 html,
 .body {
 	background: $body-background !important;
+}
+
+img {
+
 }
 
 .body-drip {
@@ -92,6 +97,18 @@ table.button.flat {
 	}
 }
 
+// MENU
+// ====================================
+.menu .menu-item {
+	a {
+		padding: 8px;
+	}
+	img.icon {
+		height: 32px;
+		width: 32px;
+	}
+}
+
 // GRID
 // ====================================
 td.columns.no-padding,
@@ -139,9 +156,15 @@ table.container.header {
 	line-height: $subheader-lineheight;
 }
 
+// Body
+
+.sk-callout {
+
+}
+
 // Pre-footer
 table.preFooter {
-	background: url("/assets/img/preFooter-600x200.png") $preFooter-background no-repeat !important;
+	background: url("/assets/img/hands-laptop_1200x400.jpg") 50% 50% / 600px auto  $preFooter-background no-repeat !important;
 
 // Better rendering for white text over dark background
 	td,
@@ -230,6 +253,13 @@ table.button.google table td {
 	background: #f3f3f3;
 }
 
+// 11. PAGES
+// ------------------------------------
+
+// Welcome
+.welcome img {
+	width: 140px !important;
+}
 
 
 
@@ -246,9 +276,15 @@ table.button.google table td {
 	table.body {
 		td.columns.small-0,
 		th.columns.small-0 {
-			width: 0 !important;
+			width: $global-padding !important;
 			padding: 0% !important;
 		}
+	}
+
+	// Body
+
+	.sk-callout {
+	 padding: 0 16px;
 	}
 
 // Typography

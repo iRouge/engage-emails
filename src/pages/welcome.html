@@ -1,22 +1,24 @@
 ---
+templateName: welcome
 subject: Welcome to Engage
 description: Confirm your email address to get started
 ---
-{{> header }}
 
+<!-- hero image block -->
 {{!-- Hero image block --}}
-<container>
+<container class="{{templateName}}">
 	<wrapper class="Block--image">
 		<spacer size="32"></spacer>
 		<center>
-			<img src="{{root}}/assets/img/sk-welcome-IMG142x136.png">
+			<img width="140" src="/assets/img/sk-welcome@0,5x.png">
 		</center>
 		<spacer size="32"></spacer>
 	</wrapper>
 </container>
 
+<!-- Callout text -->
 {{!--Callout block --}}
-<container>
+<container class="sk-callout">
 	<row>
 		<columns small="0" large="1"></columns>
 		<columns small="12" large="10">
@@ -47,42 +49,4 @@ description: Confirm your email address to get started
 		</columns>
 		<columns small="0" large="1"></columns>
 	</row>
-</container>
-
-{{!--Pre-footer block --}}
-<container class="preFooter middle" height="200">
-	<row>
-		<columns class="no-padding">
-			<p class="lead">Need help?</p>
-			<p>Our advertising experts are here to answer your questions.</p>
-			<center>
-				<button href="#" # class="flat"><span class="sk-button-inner">Contact Us</span></button>
-			</center>
-		</columns>
-	</row>
-</container>
-
-<container class="footer">
-	<center>
-		<menu>
-			<item href="https://twitter.com/SourceKnowledge"><img src="/assets/img/twitter_white_@4x.png" height="32" width="32"></item>
-			<item href="https://plus.google.com/+Sourceknowledge/posts"><img src="/assets/img/GooglePlus_white_.png" height="32" width="32"></item>
-			<item href="https://www.facebook.com/sourceknowledge1"><img src="/assets/img/facebook_white_@4x.png" height="32" width="32"></item>
-			<item href="https://www.linkedin.com/company/sourceknowledge"><img src="/assets/img/linkedIn_white_@4x.png" height="32" width="32"></item>
-		</menu>
-	</center>
-	<row>
-		<columns small="0" large="1"></columns>
-		<columns small="12" large="10">
-			<p class="small">You're receiving this newsletter because you created a campaign with us.</p>
-			<p class="small">1751 Richardson Suite 4509, Montréal, QC H3K 1G6 © 2015 Source Knowledge. All Rights Reserved.</p>
-			<p class="small">
-				Not interested anymore?
-				<a class="unsubscribe" href="#" target="_blank">Unsubscribe</a>
-				instantly
-			</p>
-		</columns>
-		<columns small="0" large="1"></columns>
-	</row>
-	<spacer size="16"></spacer>
 </container>
