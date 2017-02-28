@@ -35,7 +35,7 @@ html,
 }
 
 img {
-
+display: block;
 }
 
 .body-drip {
@@ -262,6 +262,10 @@ table.button.google table td {
 	width: 140px !important;
 }
 
+// Forgot Password
+.forgotPassword img {
+	width: 220px;
+}
 
 
 // Mobile style
