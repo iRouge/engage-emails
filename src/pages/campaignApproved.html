@@ -1,7 +1,8 @@
 ---
 templateName: campaignApproved
-subject: Your Campaign *|Campaign Name|* Has Been Approved
+subject: Your Campaign {{campaignName}} Has Been Approved
 description: Our team is reviewing your campaign.
+campaignName: Campaign Name
 ---
 
 <!-- hero image block -->
@@ -23,7 +24,7 @@ description: Our team is reviewing your campaign.
 		<columns small="0" large="1"></columns>
 		<columns small="12" large="10">
 			<h1 class="text-center title">Looking Good!<br>
-				<span class="text-center subheader">*|Campaign Name|* Has Been Approved</span>
+				<span class="text-center subheader">{{campaignName}} Has Been Approved</span>
 			</h1>
 			<spacer size="32"></spacer>
 			<p class="text-center lead">

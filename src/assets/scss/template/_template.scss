@@ -79,6 +79,11 @@ p.lead {
 	font-weight: bolder;
 }
 
+p.soft {
+	font-size: 90%;
+	color: $sk-blue-grey;
+}
+
 // BUTTON
 // ====================================
 .button a {
@@ -90,13 +95,31 @@ table.button.flat {
 	table {
 		td {
 			background: $preFooter-background; // Fallback
-			background: transparent;
+			background: $button-background-flat;
 			border: none;
 		}
 
 		a {
-			color: $button-color;
 			border: none;
+			color: $button-color;
+			font-weight: bold;
+		}
+	}
+}
+
+// and a ghost button style
+table.button.ghost {
+	table {
+		td {
+			background: $preFooter-background; // Fallback
+			background: $button-background-flat;
+			border: none; // borders hide border radius on table
+		}
+
+		a {
+			border: 2px solid $button-color;
+			color: $button-color;
+			font-weight: bold;
 		}
 	}
 }
@@ -186,7 +209,7 @@ table.preFooter {
 	}
 
 	p {
-		margin: 16px 0;
+		margin: 12px 0 20px 0;
 		color: $md-text-light;
 		text-align: center;
 
@@ -205,10 +228,10 @@ table.preFooter {
 	}
 
 	p.lead {
-		margin: 0;
+		margin: 32px 0 24px 0;
 		font-size: sk-font-size(text-3);
 		font-weight: 400;
-		line-height: 2;
+		line-height: 1;
 	}
 }
 
@@ -274,7 +297,7 @@ table.button.google table td {
 // Campagn Approved
 .campaignApproved{
 	img {
-		width: 160px;
+		width: 160px !important;
 	}
 }
 
@@ -287,7 +310,7 @@ table.button.google table td {
 // Campaign Submitted for Validation
 .campaignSubmittedForValidation {
 	img {
-		width: 160px !important;
+		width: 136px !important;
 	}
 }
 
@@ -301,7 +324,7 @@ table.button.google table td {
 // Campaign Has Ended
 .campaignHasEnded {
 	img {
-		width: 180px !important;
+		width: 152px !important;
 	}
 }
 
@@ -352,10 +375,21 @@ table.button.google table td {
 		}
 	}
 
-	table.button.flat table td {
-		a .sk-button-inner {
-			background: $preFooter-background; // Fallback
-			background: $button-background-flat;
+	table.button.flat,
+	table.button.ghost {
+		table td {
+			a .sk-button-inner {
+				background: $preFooter-background; // Fallback
+				background: $button-background-flat;
+			}
+		}
+	}
+
+	table.button.ghost {
+		table td {
+			a .sk-button-inner {
+				border: 2px solid $button-color;
+			}
 		}
 	}
 

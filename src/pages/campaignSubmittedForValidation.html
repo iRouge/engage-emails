@@ -1,7 +1,8 @@
 ---
 templateName: campaignSubmittedForValidation
-subject: We’re Reviewing Your Campaign, *|Campaign Name|*
+subject: We’re Reviewing Your Campaign, {{campaignName}}
 description: Our team is reviewing your campaign.
+campaignName: Campaign Name
 ---
 
 <!-- hero image block -->
@@ -23,23 +24,22 @@ description: Our team is reviewing your campaign.
 		<columns small="0" large="1"></columns>
 		<columns small="12" large="10">
 			<h1 class="text-center title">Almost There!<br>
-				<span class="text-center subheader">*|Campaign Name|* Is Being Validated</span>
+				<span class="text-center subheader">{{campaignName}} Is Being Validated</span>
 			</h1>
-			<spacer size="32"></spacer>
-			<p class="text-center lead">
-				Hi Marie-Anne,
-			</p>
+			<!--			<spacer size="32"></spacer>
+						<p class="text-center lead">
+							Hi Marie-Anne,
+						</p>-->
 			<p class="text-center">
-				Our team is reviewing your campaign.
-			</p>
-			<p class="text-center">
+				Our team is reviewing your campaign. <br>
 				You’ll get another email after we check it out.
 			</p>
-			<p class="text-center">
-
-			</p>
+<!--			<p class="text-center">
+				You’ll get another email after we check it out.
+			</p>-->
 			<center>
-				<button href="[button - goes to campaign’s dashboard]" class="primary radius"><span class="sk-button-inner">Go To Campaign</span></button>
+				<button href="[button - goes to campaign’s dashboard]" class="primary radius">
+					<span class="sk-button-inner">Go To Campaign</span></button>
 			</center>
 			<p class="text-center">
 				The validation process usually takes 24 hours or less.

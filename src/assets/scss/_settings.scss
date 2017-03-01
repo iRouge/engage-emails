@@ -20,7 +20,7 @@
 // sk colors
 $sk-blue: #065983;
 $sk-blue-dark: #232f3b;
-$sk-blue-lightest: #e2eef8; // Design muckups where #f3f8fc [hsl(207, 60%, 97%)] but this is too light for somme screens
+$sk-blue-lightest: #f3f8fc; // Design muckups where #f3f8fc [hsl(207, 60%, 97%)] but this is too light for somme screens try #e2eef8
 $sk-blue-grey: #5d666b;
 $sk-mail-primary: #2f7cce;
 $sk-gold: #9f6d3b;
@@ -64,20 +64,17 @@ $global-breakpoint: ($global-width + $global-gutter);
 
 // 2. GRID
 // -------
-
 $grid-column-count: 12;
 $column-padding-bottom: $global-padding;
 $container-radius: 0;
 
 // 3. BLOCK GRID
 // -------------
-
 $block-grid-max: 8;
 $block-grid-gutter: $global-gutter;
 
 // 4. TYPOGRAPHY
 // -------------
-
 $global-font-color: $md-text-dark;
 $body-font-family: Roboto, Helvetica, Arial, sans-serif;
 $global-font-weight: normal;
@@ -118,7 +115,6 @@ $anchor-color-active: $anchor-color-hover;
 $stat-font-size: 40px;
 
 // Typographic scale wrapped in a map for convenience
-//
 // Use the getter utility as this:
 // font-size('text--2')
 //
@@ -132,10 +128,9 @@ $sk-font-sizes: (
 	'text-4': 34px,
 	'text-5': 45px,
 	'text-6': 56px,
-
 );
 
-// Font-size
+// sk-font-size
 //
 // Getter utility fonction for the typographic scale
 // @arg {sting} $size - key from the $sk-font-sizes
@@ -148,18 +143,17 @@ $sk-font-sizes: (
 
 // 5. BUTTON
 // ---------
-
 $button-padding: (
-tiny: 4px 8px 4px 8px,
-small: 5px 10px 5px 10px,
-default: 8px 16px 8px 16px,
-large: 0 20px 0 20px,
+	tiny: 4px 8px 4px 8px,
+	small: 5px 10px 5px 10px,
+	default: 8px 16px 8px 16px,
+	large: 0 20px 0 20px,
 );
 $button-font-size: (
-tiny: 10px,
-small: 12px,
-default: 14px,
-large: 16px,
+	tiny: 10px,
+	small: 12px,
+	default: 14px,
+	large: 16px,
 );
 $button-color: #ffffff;
 $button-color-alt: $medium-gray;
@@ -217,4 +211,3 @@ $wrapper-padding: $global-padding;
 
 	// Footer
 	$footer-background: $sk-blue-dark;
-
