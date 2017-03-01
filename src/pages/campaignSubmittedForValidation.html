@@ -1,0 +1,50 @@
+---
+templateName: campaignSubmittedForValidation
+subject: We’re Reviewing Your Campaign, *|Campaign Name|*
+description: Our team is reviewing your campaign.
+---
+
+<!-- hero image block -->
+{{!-- Hero image block --}}
+<container class="{{templateName}}">
+	<wrapper class="Block--image">
+		<spacer size="32"></spacer>
+		<center>
+			<img src="/assets/img/sk-validation@0,5x.png">
+		</center>
+		<spacer size="32"></spacer>
+	</wrapper>
+</container>
+
+<!-- Callout text -->
+{{!--Callout block --}}
+<container class="sk-callout">
+	<row>
+		<columns small="0" large="1"></columns>
+		<columns small="12" large="10">
+			<h1 class="text-center title">Almost There!<br>
+				<span class="text-center subheader">*|Campaign Name|* Is Being Validated</span>
+			</h1>
+			<spacer size="32"></spacer>
+			<p class="text-center lead">
+				Hi Marie-Anne,
+			</p>
+			<p class="text-center">
+				Our team is reviewing your campaign.
+			</p>
+			<p class="text-center">
+				You’ll get another email after we check it out.
+			</p>
+			<p class="text-center">
+
+			</p>
+			<center>
+				<button href="[button - goes to campaign’s dashboard]" class="primary radius"><span class="sk-button-inner">Go To Campaign</span></button>
+			</center>
+			<p class="text-center">
+				The validation process usually takes 24 hours or less.
+			</p>
+		</columns>
+		<columns small="0" large="1"></columns>
+	</row>
+</container>
