@@ -260,6 +260,7 @@ table.button.google table td {
 
 // 11. PAGES
 // ------------------------------------
+// Hero image adjustment. We use !important to override mobile rules
 
 // Welcome
 // Campaign Submitted for Validation
@@ -278,15 +279,31 @@ table.button.google table td {
 }
 
 // Forgot Password
-.forgotPassword img {
-	width: 220px;
+.forgotPassword {
+	img {
+		width: 220px !important;
+	}
 }
-
 // Campaign Submitted for Validation
-.campaignSubmittedForValidation img {
-	width: 160px;
+.campaignSubmittedForValidation {
+	img {
+		width: 160px !important;
+	}
 }
 
+// Campaign Budget Goal Reached
+.campaignBudgetGoalReached {
+	img {
+		width: 200px !important;
+	}
+}
+
+// Campaign Has Ended
+.campaignHasEnded {
+	img {
+		width: 180px !important;
+	}
+}
 
 // Mobile style
 //--------------

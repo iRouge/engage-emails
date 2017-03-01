@@ -20,7 +20,7 @@
 // sk colors
 $sk-blue: #065983;
 $sk-blue-dark: #232f3b;
-$sk-blue-lightest: #f3f8fc;
+$sk-blue-lightest: #e2eef8; // Design muckups where #f3f8fc [hsl(207, 60%, 97%)] but this is too light for somme screens
 $sk-blue-grey: #5d666b;
 $sk-mail-primary: #2f7cce;
 $sk-gold: #9f6d3b;
@@ -54,7 +54,7 @@ $global-width: 600px;
 $global-width-small: 100%;
 //$global-gutter: 16px;
 $global-gutter: 0;
-$body-background: $sk-bg-2;
+$body-background: $sk-bg-3;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
