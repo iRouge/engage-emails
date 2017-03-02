@@ -20,16 +20,22 @@
         <option name="HTML_ATTRIBUTE_WRAP" value="0" />
         <option name="HTML_TEXT_WRAP" value="0" />
         <option name="HTML_KEEP_LINE_BREAKS" value="false" />
-        <option name="HTML_KEEP_BLANK_LINES" value="1" />
+        <option name="HTML_KEEP_BLANK_LINES" value="0" />
         <option name="HTML_ALIGN_ATTRIBUTES" value="false" />
+        <option name="HTML_ELEMENTS_TO_INSERT_NEW_LINE_BEFORE" value="body,div,p,form,h1,h2,h3,comment" />
+        <option name="HTML_DO_NOT_INDENT_CHILDREN_OF" value="html,body,thead,tfoot" />
         <option name="HTML_KEEP_WHITESPACES_INSIDE" value="pre,textarea" />
         <option name="HTML_INLINE_ELEMENTS" value="a,abbr,acronym,b,basefont,bdo,big,br,cite,cite,code,dfn,em,font,i,img,input,kbd,label,q,s,samp,select,strike,strong,sub,sup,textarea,tt,u,var" />
         <option name="HTML_ENFORCE_QUOTES" value="true" />
         <CssCodeStyleSettings>
           <option name="HEX_COLOR_LOWER_CASE" value="true" />
           <option name="HEX_COLOR_LONG_FORMAT" value="true" />
+          <option name="BLANK_LINES_BETWEEN_BLOCKS" value="0" />
           <option name="KEEP_SINGLE_LINE_BLOCKS" value="true" />
         </CssCodeStyleSettings>
+        <editorconfig>
+          <option name="ENABLED" value="false" />
+        </editorconfig>
         <codeStyleSettings language="CSS">
           <indentOptions>
             <option name="INDENT_SIZE" value="2" />
@@ -71,6 +77,11 @@
             <option name="INDENT_SIZE" value="4" />
             <option name="CONTINUATION_INDENT_SIZE" value="4" />
             <option name="SMART_TABS" value="true" />
+          </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="Twig">
+          <indentOptions>
+            <option name="CONTINUATION_INDENT_SIZE" value="4" />
           </indentOptions>
         </codeStyleSettings>
       </value>

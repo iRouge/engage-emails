@@ -53,9 +53,20 @@ table.middle {
 
 // TYPOGRAPHY
 // ====================================
+.subheader {
+    color: $small-font-color;
+    font-size: $small-font-size;
+    text-transform: uppercase;
+    line-height: $subheader-lineheight;
+}
+
 .title {
     line-height: $sk-title-line-height;
     margin: 0.72em 0 0.2em 0;
+    .subheader {
+        font-size: sk-font-size('text-0');
+        line-height: $subheader-lineheight;
+    }
 }
 
 h1.title {
@@ -168,18 +179,6 @@ table.container.header {
     background: transparent;
 }
 
-// Sub-header
-.subheader {
-    color: $small-font-color;
-    font-size: $small-font-size;
-    text-transform: uppercase;
-    line-height: $subheader-lineheight;
-}
-
-.title .subheader {
-    font-size: sk-font-size('text-0');
-    line-height: $subheader-lineheight;
-}
 
 // Body
 
@@ -342,6 +341,11 @@ table.button.google table td {
             width: $global-padding !important;
             padding: 0% !important;
         }
+
+        td.columns.small-12,
+        th.columns.small-12 {
+            padding-bottom: 0 !important;
+        }
     }
 
     // Body
@@ -352,10 +356,25 @@ table.button.google table td {
 
     // Typography
     h1.title {
-        font-size: sk-font-size('text-4');
-        .subheader {
-            font-size: sk-font-size('text--2');
-        }
+        font-size: sk-font-size('text-4') !important;
+    }
+
+    h2.title {
+        font-size: sk-font-size('text-3') !important;
+    }
+
+    .title .subheader {
+            font-size: sk-font-size('text--2') !important;
+    }
+
+// Pre-footer
+    table.preFooter p.lead {
+        margin: 24px 0 24px 0 !important;
+        font-size: sk-font-size(text-2) !important;
+    }
+
+    table.preFooter p {
+        margin-bottom: 12px !important;
     }
 
     // Buttons
@@ -364,9 +383,8 @@ table.button.google table td {
     // We define the visible part of the button with a span inside the a tag
     // .sk-button-inner - class for the visible part of the button
     table.button.primary table td {
-        background: $body-background; // Fallback
-        background: transparent;
-        border: none;
+        background: transparentize($container-background, 1) !important;
+        border: none !important;
 
         a .sk-button-inner {
             background: $button-background;
@@ -392,10 +410,10 @@ table.button.google table td {
     }
 
     table.button table td a {
-        display: table-cell;
-        vertical-align: middle;
-        padding: 0;
-        height: $sk-touch-zone-height;
+        display: table-cell !important;
+        vertical-align: middle !important;
+        padding: 0 !important;
+        height: $sk-touch-zone-height !important;
 
         .sk-button-inner {
             display: inline-block;

@@ -1,28 +1,92 @@
-{% include "AppBundle:Emails:headers/_header-ended.html.twig" %}
-<table width="650" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" align="center" class="content deviceWidth">
-    <tbody>
-    <tr>
-        <td align="center">
-            <img src="{{ base_url ~ asset('bundles/app/images/emails/sk-end.png') }}"/>
-        </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <p class="title">{{ 'Mission Accomplished'|trans }}</p>
-            <p class="sub-title">*|{{ campaignName }}|* {{ 'Has Reached Its End Date'|trans }}</p>
-        </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <p>{{ 'Your campaign has reached its end date.'|trans }}</p>
-        </td>
-    </tr>
-    <tr>
-        <td align="center">
-            <a class="btn btn-success" href="{{ path('get_campaign', {'id':campaignId}) }}" target="_blank">{{ 'See The Results'|trans }}</a>
-        </td>
-    </tr>
-    </tbody>
-</table>
-{% include "AppBundle:Emails:_pre-footer.html.twig" %}
-{% include "AppBundle:Emails:_footer.html.twig" %}
+{% extends "AppBundle:Emails:email-base.html.twig" %}
+{% block content %}
+    <!-- hero image block -->
+    <table align="center" class="container campaignHasEnded float-center" style="Margin:0 auto;background:#fefefe;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:600px">
+        <tbody>
+            <tr style="padding:0;text-align:left;vertical-align:top">
+                <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                    <table class="wrapper Block--image" align="center" style="background:#f3f8fc;border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                        <tr style="padding:0;text-align:left;vertical-align:top">
+                            <td class="wrapper-inner" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                    <tbody>
+                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                            <td height="32px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:32px;font-weight:400;hyphens:auto;line-height:32px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <center data-parsed="" style="min-width:600px;width:100%">
+                                    <img src="{{ base_url ~ asset('bundles/app/images/emails/sk-end@0,5x.png') }}" align="center" class="float-center" style="-ms-interpolation-mode:bicubic;Margin:0 auto;clear:both;display:block;float:none;margin:0 auto;max-width:100%;outline:0;text-align:center;text-decoration:none;width:152px!important">
+                                </center>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Callout text -->
+    <table align="center" class="container sk-callout float-center" style="Margin:0 auto;background:#fefefe;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto;padding:0;text-align:center;vertical-align:top;width:600px">
+        <tbody>
+            <tr style="padding:0;text-align:left;vertical-align:top">
+                <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                    <table class="row" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
+                        <tbody>
+                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                <th class="small-0 large-1 columns first" style="Margin:0 auto;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.5;margin:0 auto;padding:0;padding-bottom:16px;padding-left:0;padding-right:0;text-align:left;width:50px">
+                                    <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                            <th style="Margin:0;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.5;margin:0;padding:0;text-align:left"></th>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <th class="small-12 large-10 columns" style="Margin:0 auto;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.5;margin:0 auto;padding:0;padding-bottom:16px;padding-left:0;padding-right:0;text-align:left;width:500px">
+                                    <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                            <th style="Margin:0;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.5;margin:0;padding:0;text-align:left">
+                                                <h2 class="text-center title" style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:34px;font-weight:400;line-height:1;margin:.72em 0 .2em 0;margin-bottom:10px;padding:0;text-align:center;word-wrap:normal">Mission Accomplished<br>
+                                                    <span class="text-center subheader" style="color:#9f6d3b;display:block;font-size:14px;line-height:2;text-align:center;text-transform:uppercase;width:100%">{{ campaignName }} Has Reached Its End Date</span>
+                                                </h2>
+                                                <table class="spacer" style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                    <tbody>
+                                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                                            <td height="32px" style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:32px;font-weight:400;hyphens:auto;line-height:32px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">&#xA0;</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="text-center lead" style="Margin:0;Margin-bottom:10px;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:larger;font-weight:bolder;line-height:1.6;margin:0;margin-bottom:10px;padding:0;text-align:center">Your campaign has reached its end date.</p>
+                                                <center data-parsed="" style="min-width:500px;width:100%">
+                                                    <table class="button primary radius float-center" style="Margin:16px 0;border-collapse:collapse;border-spacing:0;float:none;margin:16px 0;padding:0;text-align:center;vertical-align:top;width:auto">
+                                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                                            <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                                    <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                        <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;background:#2f7cce;border:none;border-collapse:collapse!important;border-radius:3px;color:#ffffff;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;hyphens:auto;line-height:1.5;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                            <a href="{{ path('get_campaign', {'id':campaignId}) }}" target="_blank" style="Margin:0;border:0 solid #2f7cce;border-radius:3px;color:#ffffff;display:inline-block;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.3;margin:0;padding:8px 16px 8px 16px;text-align:left;text-decoration:none;text-transform:uppercase">
+                                                                                <span class="sk-button-inner">See The Results</span>
+                                                                            </a></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </center>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </th>
+                                <th class="small-0 large-1 columns last" style="Margin:0 auto;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.5;margin:0 auto;padding:0;padding-bottom:16px;padding-left:0;padding-right:0;text-align:left;width:50px">
+                                    <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                        <tr style="padding:0;text-align:left;vertical-align:top">
+                                            <th style="Margin:0;color:#212121;font-family:Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.5;margin:0;padding:0;text-align:left"></th>
+                                        </tr>
+                                    </table>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

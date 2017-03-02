@@ -1,6 +1,10 @@
----templateName: campaignBudgetGoalReachedsubject: Campaign Name Has Reached Its Goaldescription:goalValue: 38750$---
+---
+templateName: campaignBudgetGoalReached
+campaignName: "{{ campaignName }}"
+goalValue: "{{ goalValue }}"
+---
 
-<!-- hero image block -->{{!-- Hero image block --}}
+<!-- hero image block -->
 <container class="{{templateName}}">
     <wrapper class="Block--image">
         <spacer size="32"></spacer>
@@ -10,18 +14,17 @@
         <spacer size="32"></spacer>
     </wrapper>
 </container>
-
-<!-- Callout text -->{{!--Callout block --}}
+<!-- Callout text -->
 <container class="sk-callout">
     <row>
         <columns small="0" large="1"></columns>
         <columns small="12" large="10">
-            <h1 class="text-center title">Mission Accomplished<br>
-                <span class="text-center subheader">Campaign Name Has Reached Its Goal</span>
-            </h1>
+            <h2 class="text-center title">Mission Accomplished<br>
+                <span class="text-center subheader">{{ campaignName }} Has Reached Its Goal</span>
+            </h2>
             <spacer size="32"></spacer>
             <p class="text-center lead">
-                Your campaign has reached its goal of {{goalValue}} </p>
+                Your campaign has reached its goal of {{ goalValue }}</p>
             <center>
                 <button href="campaign’s dashboard" class="primary radius">
                     <span class="sk-button-inner">See The Results</span>
