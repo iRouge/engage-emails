@@ -119,15 +119,15 @@ $stat-font-size: 40px;
 // font-size('text--2')
 //
 $sk-font-sizes: (
-	'text--2': 11px,
-	'text--1': 12px,
-	'text-0': $global-font-size,
-	'text-1': 16px,
-	'text-2': 20px,
-	'text-3': 24px,
-	'text-4': 34px,
-	'text-5': 45px,
-	'text-6': 56px,
+    'text--2': 11px,
+    'text--1': 12px,
+    'text-0': $global-font-size,
+    'text-1': 16px,
+    'text-2': 20px,
+    'text-3': 24px,
+    'text-4': 34px,
+    'text-5': 45px,
+    'text-6': 56px,
 );
 
 // sk-font-size
@@ -138,22 +138,22 @@ $sk-font-sizes: (
 // @return {lenght} - The value (in px) from $sk-font-sizes
 //
 @function sk-font-size($size) {
-	@return map-get($sk-font-sizes, $size);
+    @return map-get($sk-font-sizes, $size);
 }
 
 // 5. BUTTON
 // ---------
 $button-padding: (
-	tiny: 4px 8px 4px 8px,
-	small: 5px 10px 5px 10px,
-	default: 8px 16px 8px 16px,
-	large: 0 20px 0 20px,
+    tiny: 4px 8px 4px 8px,
+    small: 5px 10px 5px 10px,
+    default: 8px 16px 8px 16px,
+    large: 0 20px 0 20px,
 );
 $button-font-size: (
-	tiny: 10px,
-	small: 12px,
-	default: 14px,
-	large: 16px,
+    tiny: 10px,
+    small: 12px,
+    default: 14px,
+    large: 16px,
 );
 $button-color: #ffffff;
 $button-color-alt: $medium-gray;
@@ -202,12 +202,12 @@ $wrapper-padding: $global-padding;
 // 10. SECTIONS
 // ------------
 
-	// Header
-	$header-background: $sk-blue-dark;
-	$header-padding: 0px;
+// Header
+$header-background: $sk-blue-dark;
+$header-padding: 0px;
 
-	// Pre-footer
-	$preFooter-background: $sk-blue-grey;
+// Pre-footer
+$preFooter-background: $sk-blue-grey;
 
-	// Footer
-	$footer-background: $sk-blue-dark;
+// Footer
+$footer-background: $sk-blue-dark;

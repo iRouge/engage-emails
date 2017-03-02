@@ -24,124 +24,122 @@
 //  10. Sections
 //  11. Pages
 
-
-
 // GLOBAL
 // ====================================
 body,
 html,
 .body {
-	background: $body-background !important;
+    background: $body-background !important;
 }
 
 img {
-display: block;
+    display: block;
 }
 
 .body-drip {
-	border-top: 8px solid #663399;
+    border-top: 8px solid #663399;
 }
 
 .Block--image {
-	background: $sk-blue-lightest;
+    background: $sk-blue-lightest;
 }
 
 table.middle {
-	tr,
-	td {
-		vertical-align: middle;
-	}
+    tr,
+    td {
+        vertical-align: middle;
+    }
 }
 
 // TYPOGRAPHY
 // ====================================
 .title {
-	line-height: $sk-title-line-height;
-	margin: 0.72em 0 0.2em 0;
+    line-height: $sk-title-line-height;
+    margin: 0.72em 0 0.2em 0;
 }
 
 h1.title {
-	font-size: sk-font-size('text-5');
+    font-size: sk-font-size('text-5');
 }
 
 h2.title {
-	font-size: sk-font-size('text-4')
+    font-size: sk-font-size('text-4')
 }
 
 p.small {
-	margin-top: 0 !important;
-	margin-bottom: 2px !important;
-	 font-size: sk-font-size(text--2);
+    margin-top: 0 !important;
+    margin-bottom: 2px !important;
+    font-size: sk-font-size(text--2);
 }
 
 p.lead {
-	font-size: larger;
-	font-weight: bolder;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 p.soft {
-	font-size: 90%;
-	color: $sk-blue-grey;
+    font-size: 90%;
+    color: $sk-blue-grey;
 }
 
 // BUTTON
 // ====================================
 .button a {
-	text-transform: uppercase;
-
+    text-transform: uppercase;
 }
+
 // We add a flat button style
 table.button.flat {
-	table {
-		td {
-			background: $preFooter-background; // Fallback
-			background: $button-background-flat;
-			border: none;
-		}
+    table {
+        td {
+            background: $preFooter-background; // Fallback
+            background: $button-background-flat;
+            border: none;
+        }
 
-		a {
-			border: none;
-			color: $button-color;
-			font-weight: bold;
-		}
-	}
+        a {
+            border: none;
+            color: $button-color;
+            font-weight: bold;
+        }
+    }
 }
 
 // and a ghost button style
 table.button.ghost {
-	table {
-		td {
-			background: $preFooter-background; // Fallback
-			background: $button-background-flat;
-			border: none; // borders hide border radius on table
-		}
+    table {
+        td {
+            background: $preFooter-background; // Fallback
+            background: $button-background-flat;
+            border: none; // borders hide border radius on table
+        }
 
-		a {
-			border: 2px solid $button-color;
-			color: $button-color;
-			font-weight: bold;
-		}
-	}
+        a {
+            border: 2px solid $button-color;
+            color: $button-color;
+            font-weight: bold;
+        }
+    }
 }
 
 // MENU
 // ====================================
 .menu .menu-item {
-	a {
-		padding: 8px;
-	}
-	img.icon {
-		height: 32px;
-		width: 32px;
-	}
+    a {
+        padding: 8px;
+    }
+    img.icon {
+        height: 32px;
+        width: 32px;
+    }
 }
 
 // GRID
 // ====================================
 td.columns.no-padding,
 th.columns.no-padding {
-	padding-top: 0;
-	padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 // SECTIONS
@@ -149,136 +147,135 @@ th.columns.no-padding {
 
 // Header
 table.container.header {
-	//  background: #8a8a8a;
-	background: $header-background;
+    //  background: #8a8a8a;
+    background: $header-background;
 }
 
 .header .columns {
-	padding-bottom: 0;
+    padding-bottom: 0;
 }
 
 .header p {
-	color: #ffffff;
-	padding-top: 15px;
+    color: #ffffff;
+    padding-top: 15px;
 }
 
 .header .wrapper-inner {
-	padding: $header-padding;
+    padding: $header-padding;
 }
 
 .header .container {
-	background: transparent;
+    background: transparent;
 }
 
 // Sub-header
 .subheader {
-	color: $small-font-color;
-	font-size: $small-font-size;
-	text-transform: uppercase;
-	line-height: $subheader-lineheight;
+    color: $small-font-color;
+    font-size: $small-font-size;
+    text-transform: uppercase;
+    line-height: $subheader-lineheight;
 }
 
 .title .subheader {
-	font-size: sk-font-size('text-0');
-	line-height: $subheader-lineheight;
+    font-size: sk-font-size('text-0');
+    line-height: $subheader-lineheight;
 }
 
 // Body
 
 .sk-callout {
-
 }
 
 // Pre-footer
 table.preFooter {
-	background-repeat: no-repeat;
-	background-image: url("/assets/img/hands-laptop_600x200.jpg") !important;
-	background-color: $preFooter-background;
-// Better rendering for white text over dark background
-	td,
-	th,
-	p,
-	.sk-button-inner {
-		font-smooth: always;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
+    background-repeat: no-repeat;
+    background-image: url("/assets/img/hands-laptop_600x200.jpg") !important;
+    background-color: $preFooter-background;
+    // Better rendering for white text over dark background
+    td,
+    th,
+    p,
+    .sk-button-inner {
+        font-smooth: always;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 
-	table.button {
-		margin: 0;
-	}
+    table.button {
+        margin: 0;
+    }
 
-	p {
-		margin: 12px 0 20px 0;
-		color: $md-text-light;
-		text-align: center;
+    p {
+        margin: 12px 0 20px 0;
+        color: $md-text-light;
+        text-align: center;
 
-		a.cta {
-			display: inline-block;
-			padding: map-get($button-padding, 'default');
-			color: $md-text-light;
-			font-weight: bold;
-			text-transform: uppercase;
-			line-height: 2;
-		}
-	}
+        a.cta {
+            display: inline-block;
+            padding: map-get($button-padding, 'default');
+            color: $md-text-light;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 2;
+        }
+    }
 
-	p.cta {
-		margin: 0;
-	}
+    p.cta {
+        margin: 0;
+    }
 
-	p.lead {
-		margin: 32px 0 24px 0;
-		font-size: sk-font-size(text-3);
-		font-weight: 400;
-		line-height: 1;
-	}
+    p.lead {
+        margin: 32px 0 24px 0;
+        font-size: sk-font-size(text-3);
+        font-weight: 400;
+        line-height: 1;
+    }
 }
 
 // Footer
 table.container.footer {
-	background: $footer-background;
+    background: $footer-background;
 
-	// Better rendering for white text over dark background
-	td,
-	th,
-	p,
-	.sk-button-inner {
-		font-smooth: always;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
+    // Better rendering for white text over dark background
+    td,
+    th,
+    p,
+    .sk-button-inner {
+        font-smooth: always;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 
-	.menu {
-		margin-top: 14px;
-		margin-bottom: 24px;
-	}
+    .menu {
+        margin-top: 14px;
+        margin-bottom: 24px;
+    }
 
-	p {
-		margin: 16px 0;
-		color: $md-text-light;
-		text-align: center;
-	}
+    p {
+        margin: 16px 0;
+        color: $md-text-light;
+        text-align: center;
+    }
 }
 
 // Social Media
 table.button.facebook table td {
-	background: #3b5998 !important;
-	border-color: #3b5998;
+    background: #3b5998 !important;
+    border-color: #3b5998;
 }
 
 table.button.twitter table td {
-	background: #1daced !important;
-	border-color: #1daced;
+    background: #1daced !important;
+    border-color: #1daced;
 }
 
 table.button.google table td {
-	background: #db4a39 !important;
-	border-color: #db4a39;
+    background: #db4a39 !important;
+    border-color: #db4a39;
 }
 
 .wrapper.secondary {
-	background: #f3f3f3;
+    background: #f3f3f3;
 }
 
 // 11. PAGES
@@ -289,151 +286,151 @@ table.button.google table td {
 // Campaign Submitted for Validation
 .welcome,
 .campaignSubmittedForValidation {
-	img {
-		width: 140px !important;
-	}
+    img {
+        width: 140px !important;
+    }
 }
 
 // Campagn Approved
-.campaignApproved{
-	img {
-		width: 160px !important;
-	}
+.campaignApproved {
+    img {
+        width: 160px !important;
+    }
 }
 
 // Forgot Password
 .forgotPassword {
-	img {
-		width: 220px !important;
-	}
+    img {
+        width: 220px !important;
+    }
 }
+
 // Campaign Submitted for Validation
 .campaignSubmittedForValidation {
-	img {
-		width: 136px !important;
-	}
+    img {
+        width: 136px !important;
+    }
 }
 
 // Campaign Budget Goal Reached
 .campaignBudgetGoalReached {
-	img {
-		width: 200px !important;
-	}
+    img {
+        width: 200px !important;
+    }
 }
 
 // Campaign Has Ended
 .campaignHasEnded {
-	img {
-		width: 152px !important;
-	}
+    img {
+        width: 152px !important;
+    }
 }
 
 // Mobile style
 //--------------
 @media only screen and (max-width: #{$global-breakpoint}) {
 
-// Grid
-//
-// Table padding doesn't always collapse in floating grids
-// Zurb's solution for centering columns is to insert empty columns.
-// By adding zero width column classes we avoid visibility classses
-// that are less widely supported.
-	table.body {
-		td.columns.small-0,
-		th.columns.small-0 {
-			width: $global-padding !important;
-			padding: 0% !important;
-		}
-	}
+    // Grid
+    //
+    // Table padding doesn't always collapse in floating grids
+    // Zurb's solution for centering columns is to insert empty columns.
+    // By adding zero width column classes we avoid visibility classses
+    // that are less widely supported.
+    table.body {
+        td.columns.small-0,
+        th.columns.small-0 {
+            width: $global-padding !important;
+            padding: 0% !important;
+        }
+    }
 
-	// Body
+    // Body
 
-	.sk-callout {
-	 padding: 0 16px;
-	}
+    .sk-callout {
+        padding: 0 16px;
+    }
 
-// Typography
-	h1.title {
-		font-size: sk-font-size('text-4');
-		.subheader {
-			font-size: sk-font-size('text--2');
-		}
-	}
+    // Typography
+    h1.title {
+        font-size: sk-font-size('text-4');
+        .subheader {
+            font-size: sk-font-size('text--2');
+        }
+    }
 
-// Buttons
-//
-// We want buttons to have the recomanded 48px touch-zone without being too big.
-// We define the visible part of the button with a span inside the a tag
-// .sk-button-inner - class for the visible part of the button
-	table.button.primary table td {
-		background: $body-background; // Fallback
-		background: transparent;
-		border: none;
+    // Buttons
+    //
+    // We want buttons to have the recomanded 48px touch-zone without being too big.
+    // We define the visible part of the button with a span inside the a tag
+    // .sk-button-inner - class for the visible part of the button
+    table.button.primary table td {
+        background: $body-background; // Fallback
+        background: transparent;
+        border: none;
 
-		 a .sk-button-inner {
-			background: $button-background;
-		}
-	}
+        a .sk-button-inner {
+            background: $button-background;
+        }
+    }
 
-	table.button.flat,
-	table.button.ghost {
-		table td {
-			a .sk-button-inner {
-				background: $preFooter-background; // Fallback
-				background: $button-background-flat;
-			}
-		}
-	}
+    table.button.flat,
+    table.button.ghost {
+        table td {
+            a .sk-button-inner {
+                background: $preFooter-background; // Fallback
+                background: $button-background-flat;
+            }
+        }
+    }
 
-	table.button.ghost {
-		table td {
-			a .sk-button-inner {
-				border: 2px solid $button-color;
-			}
-		}
-	}
+    table.button.ghost {
+        table td {
+            a .sk-button-inner {
+                border: 2px solid $button-color;
+            }
+        }
+    }
 
-	table.button table td a {
-		display: table-cell;
-		vertical-align: middle;
-		padding: 0;
-		height: $sk-touch-zone-height;
+    table.button table td a {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0;
+        height: $sk-touch-zone-height;
 
-		.sk-button-inner {
-			display: inline-block;
-			color: $button-color;
-			padding: map-get($button-padding, default);
-			border: none;
-			border-radius: $button-radius;
-		}
-	}
+        .sk-button-inner {
+            display: inline-block;
+            color: $button-color;
+            padding: map-get($button-padding, default);
+            border: none;
+            border-radius: $button-radius;
+        }
+    }
 
-	.button.flat .sk-button-inner {
+    .button.flat .sk-button-inner {
+    }
 
-	}
+    table.button:hover,
+    table.button:visited,
+    table.button:active {
+        table {
+            td {
+                background: $body-background;
+                color: $button-color;
+            }
+            a {
+                border: 0 solid $button-background;
+            }
+        }
+    }
 
-	table.button:hover,
-	table.button:visited,
-	table.button:active {
-		table {
-			td {
-				background: $body-background;
-				color: $button-color;
-			}
-			a {
-				border: 0 solid $button-background;
-			}
-		}
-	}
-
-// Prevent iOS blue rendering of links
-	a[x-apple-data-detectors] {
-		color: inherit !important;
-		text-decoration: none !important;
-		font-size: inherit !important;
-		font-family: inherit !important;
-		font-weight: inherit !important;
-		line-height: inherit !important;
-	}
+    // Prevent iOS blue rendering of links
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
 
 }

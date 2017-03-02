@@ -1,39 +1,33 @@
----
-templateName: campaignBudgetGoalReached
-subject: Campaign Name Has Reached Its Goal
-description:
-goalValue: 38750$
----
+---templateName: campaignBudgetGoalReachedsubject: Campaign Name Has Reached Its Goaldescription:goalValue: 38750$---
 
-<!-- hero image block -->
-{{!-- Hero image block --}}
+<!-- hero image block -->{{!-- Hero image block --}}
 <container class="{{templateName}}">
-	<wrapper class="Block--image">
-		<spacer size="32"></spacer>
-		<center>
-			<img src="/assets/img/sk-budget@0,5x.png">
-		</center>
-		<spacer size="32"></spacer>
-	</wrapper>
+    <wrapper class="Block--image">
+        <spacer size="32"></spacer>
+        <center>
+            <img src="/assets/img/sk-budget@0,5x.png">
+        </center>
+        <spacer size="32"></spacer>
+    </wrapper>
 </container>
 
-<!-- Callout text -->
-{{!--Callout block --}}
+<!-- Callout text -->{{!--Callout block --}}
 <container class="sk-callout">
-	<row>
-		<columns small="0" large="1"></columns>
-		<columns small="12" large="10">
-			<h1 class="text-center title">Mission Accomplished<br>
-				<span class="text-center subheader">Campaign Name Has Reached Its Goal</span>
-			</h1>
-			<spacer size="32"></spacer>
-			<p class="text-center lead">
-				Your campaign has reached its goal of {{goalValue}}
-			</p>
-			<center>
-				<button href="campaign’s dashboard" class="primary radius"><span class="sk-button-inner">See The Results</span></button>
-			</center>
-		</columns>
-		<columns small="0" large="1"></columns>
-	</row>
+    <row>
+        <columns small="0" large="1"></columns>
+        <columns small="12" large="10">
+            <h1 class="text-center title">Mission Accomplished<br>
+                <span class="text-center subheader">Campaign Name Has Reached Its Goal</span>
+            </h1>
+            <spacer size="32"></spacer>
+            <p class="text-center lead">
+                Your campaign has reached its goal of {{goalValue}} </p>
+            <center>
+                <button href="campaign’s dashboard" class="primary radius">
+                    <span class="sk-button-inner">See The Results</span>
+                </button>
+            </center>
+        </columns>
+        <columns small="0" large="1"></columns>
+    </row>
 </container>
