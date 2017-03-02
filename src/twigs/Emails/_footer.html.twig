@@ -1,0 +1,49 @@
+<table width="650" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#202628" class="footer deviceWidth">
+    <tbody>
+    <tr>
+        <td align="center">
+            <p class="small">{{ 'You\'re receiving this newsletter because you created a campaign with us.'|trans }}</p>
+            <p class="small">{{ '1751 Richardson Suite 4509, Montréal, QC H3K 1G6 © 2015 Source Knowledge. All Rights Reserved. '|trans }}</p>
+            {% if type != 4 and type != 5 %}
+                <p class="small">
+                    {{ 'Not interested anymore?'|trans }}
+                    <a class="unsubscribe" href="{{ path('get_unsubscribe_emailtype', {'hash':hash, 'type':type}) }}" target="_blank">{{ 'Unsubscribe'|trans }}</a>
+                    {{ 'instantly'|trans }}
+                </p>
+            {% endif %}
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <table id="social-icons" cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                <tr>
+                    <td>
+                        <a href="https://twitter.com/SourceKnowledge" target="_blank">
+                            <img width="24" hight="24" src="{{ base_url ~ asset('bundles/app/images/emails/twitter.png') }}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.facebook.com/sourceknowledge1" target="_blank">
+                            <img width="24" hight="24" src="{{ base_url ~ asset('bundles/app/images/emails/facebook.png') }}">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.linkedin.com/company/sourceknowledge.com" target="_blank">
+                            <img width="24" hight="24" src="{{ base_url ~ asset('bundles/app/images/emails/linkedin.png') }}">
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

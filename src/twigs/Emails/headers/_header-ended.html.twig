@@ -1,0 +1,241 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>{{ 'Campaign Has Ended'|trans }}</title>
+
+    <style type="text/css">
+
+        /* body */
+        .ReadMsgBody {
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        .ExternalClass {
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        body {
+            width: 100%;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        p {
+            color: #748591;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 28px;
+            margin: 0;
+            padding: 0 40px;
+        }
+
+        .wrapper > tbody > tr > td {
+            padding: 35px 0;
+        }
+
+        .btn-success {
+            background-color: #2477D4;
+        }
+
+        /* header */
+        .header p {
+            color: #6F993A;
+        }
+
+        /* content */
+        .content .title {
+            color: #202628;
+            font-weight: 300;
+            line-height: 30px;
+            font-size: 30px;
+        }
+
+        .content .sub-title {
+            color: #A0B5C7;
+            margin: 10px;
+            line-height: 22px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .content tr:first-child td {
+            padding: 40px 0px;
+        }
+
+        .content tr:nth-child(3) td {
+            padding: 15px 40px;
+        }
+
+        .content tr:last-child td {
+            padding: 10px 40px 60px;
+        }
+
+        .content .btn {
+            display: inline-block;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 24px;
+            padding: 13px 35px 12px 35px;
+            text-align: center;
+            text-decoration: none !important;
+            font-family: sans-serif;
+            color: #FFF;
+            border: 0px solid transparent;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        .content img {
+            width: 300px;
+        }
+
+        /* pre-footer */
+        .pre-footer p {
+            font-size: 16px;
+            color: #fff;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            top: 42px;
+            line-height: normal;
+        }
+
+        .pre-footer .btn-contact {
+            border: 1px solid #e9edf1;
+            border-radius: 3px;
+            color: #e9edf1;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            left: 0;
+            letter-spacing: 1px;
+            line-height: 24px;
+            margin: auto;
+            padding: 12px 0;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            text-decoration: none !important;
+            text-transform: uppercase;
+            top: 106px;
+            width: 210px;
+        }
+
+        /* footer */
+        .footer tr:first-child td {
+            padding: 40px 0 0;
+        }
+
+        .footer tr:last-child td {
+            padding: 25px 0;
+        }
+
+        .footer p.small {
+            font-size: 11px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer p.small:last-child {
+            line-height: 24px;
+        }
+
+        .footer .unsubscribe {
+            color: #9F6D3B;
+            text-decoration: none;
+        }
+
+        .footer #social-icons td {
+            padding: 0 5px;
+        }
+
+        /* media */
+        @media only screen and (max-width: 640px) {
+            body[yahoo] .deviceWidth {
+                width: 440px !important;
+                padding: 0;
+            }
+        }
+
+        @media only screen and (max-width: 479px) {
+            body[yahoo] .deviceWidth {
+                width: 280px !important;
+                padding: 0;
+            }
+
+            body[yahoo] .content img {
+                width: 250px !important;
+            }
+
+            body[yahoo] .content tr:nth-child(3) td {
+                padding: 15px 0px;
+            }
+
+            body[yahoo] .pre-footer .btn-contact {
+                width: 180px;
+                top: 122px;
+            }
+        }
+    </style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" yahoo="fix">
+
+<!-- Wrapper -->
+<table class="wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f5f5f5">
+    <tbody>
+    <tr>
+        <td>
+            <table width="650" border="0" cellpadding="0" cellspacing="0" align="center" class="header deviceWidth">
+                <tbody>
+                <tr>
+                    <td>
+                        <table width="650" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#EAF0E2" class="deviceWidth">
+                            <tr>
+                                <td height="30" align="center">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth">
+                                        <tr>
+                                            <td align="center">
+                                                <p>*|{{ campaignName }}|* {{ 'Has Ended'|trans }}</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="650" bgcolor="#283643" border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth">
+                            <tr>
+                                <td height="80" align="center">
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth">
+                                        <tr>
+                                            <td align="center">
+                                                <a href="{{ path('get_campaigns') }}" target="_blank">
+                                                    <img src="{{ base_url ~ asset('bundles/app/images/emails/sk-logo.png') }}" width="250"/>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+

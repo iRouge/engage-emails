@@ -1,0 +1,94 @@
+{# template: email-base.html.twig #}
+{# -- This is the base layout for all the emails -- #}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" style="background:#e9edf1!important">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{ subject }}</title>
+    <!-- <style> -->
+    <style>
+        @media only screen {
+            html { min-height: 100%; background: #e9edf1 }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .small-float-center { margin: 0 auto !important; float: none !important; text-align: center !important }
+
+            table.body img { width: auto; height: auto }
+
+            table.body center { min-width: 0 !important }
+
+            table.body .container { width: 100% !important }
+
+            table.body .columns { height: auto !important; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: 0 !important; padding-right: 0 !important }
+
+            table.body .columns .columns { padding-left: 0 !important; padding-right: 0 !important }
+
+            table.body .collapse .columns { padding-left: 0 !important; padding-right: 0 !important }
+
+            th.small-6 { display: inline-block !important; width: 50% !important }
+
+            th.small-12 { display: inline-block !important; width: 100% !important }
+
+            .columns th.small-12 { display: block !important; width: 100% !important }
+
+            table.menu { width: 100% !important }
+
+            table.menu td, table.menu th { width: auto !important; display: inline-block !important }
+
+            table.menu.vertical td, table.menu.vertical th { display: block !important }
+
+            table.menu[align=center] { width: auto !important }
+
+            table.body th.columns.small-0 { width: 16px !important; padding: 0 !important }
+
+            .sk-callout { padding: 0 16px }
+
+            h1.title { font-size: 34px }
+
+            h1.title .subheader { font-size: 11px }
+
+            table.button.primary table td { background: #e9edf1; background: 0 0; border: none }
+
+            table.button.primary table td a .sk-button-inner { background: #2f7cce }
+
+            table.button.flat table td a .sk-button-inner { background: #5d666b; background: 0 0 }
+
+            table.button table td a { display: table-cell; vertical-align: middle; padding: 0; height: 48px }
+
+            table.button table td a .sk-button-inner { display: inline-block; color: #ffffff; padding: 8px 16px 8px 16px; border: none; border-radius: 3px }
+
+            table.button:active table td, table.button:hover table td, table.button:visited table td { background: #e9edf1; color: #ffffff }
+
+            table.button:active table a, table.button:hover table a, table.button:visited table a { border: 0 solid #2f7cce }
+        }
+    </style>
+</head>
+<body>
+<table class="body">
+    <tr>
+        <td class="center" align="center" valign="top">
+            <center>
+                <!-- HEADER -->
+                {% include "AppBundle:Emails:partials/_header.html.twig" %}
+
+                <!-- CONTENT -->
+                {% block content %}{% endblock %}
+
+                <!-- PRE-FOOTER -->
+                {% include "AppBundle:Emails:partials/_pre-footer.html.twig" %}
+
+                <!-- FOOTER -->
+                {% include "AppBundle:Emails:partials/_footer.html.twig" %}
+            </center>
+        </td>
+    </tr>
+</table>
+<!-- prevent Gmail on iOS font size manipulation -->
+<div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+</body>
+</html>
+
+
